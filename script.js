@@ -7,7 +7,7 @@ function checkGuess() {
   console.log("Checking guess...");
   
   let guess = parseInt(document.getElementById('guess').value);
-  let responseElement = document.getElementById('response');
+  let responseElement = document.getElementById('respond');
 
   console.log("Guess:", guess);
   
