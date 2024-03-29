@@ -4,21 +4,21 @@ let previousGuess = null;
 let previousDifference = null;
 
 function checkGuess() {
-  console.log("Checking guess...");
+ // console.log("Checking guess...");
   
   let guess = parseInt(document.getElementById('guess').value);
   let responseElement = document.getElementById('respond');
 
-  console.log("Guess:", guess);
+  //console.log("Guess:", guess);
   
   if (isNaN(guess) || guess < 1 || guess > 100) {
     responseElement.textContent = "Please enter a valid number between 1 and 100.";
     return;
   }
 
-  console.log("Secret Number:", secretNumber);
+  /*console.log("Secret Number:", secretNumber);
   console.log("Previous Guess:", previousGuess);
-  console.log("Previous Difference:", previousDifference);
+  console.log("Previous Difference:", previousDifference);*/
   
   if (previousGuess === null) {
     if (guess < secretNumber) {
